@@ -11,7 +11,7 @@ class Funcionario extends ModeloBase {
   Funcionario.fromMap(DocumentSnapshot documento) {
     _documentId = documento.documentID;
 
-    this.nome = documento.data["Nome"];
+    this.nome = documento.data["nome"];
     
   }
 

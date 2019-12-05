@@ -27,7 +27,7 @@ class TiposServicosRepository extends Disposable {
       (document) => TiposServicos.fromMap(document)));
   
   Future<TiposServicos> getTiposServicosById(String _tiposServicosId) async {
-    DocumentSnapshot tiposServicos = await _collection.document(tiposservicosId).get();
+    DocumentSnapshot tiposServicos = await _collection.document(_tiposServicosId).get();
 
     _tiposServicos = TiposServicos.fromMap(tiposServicos);
 

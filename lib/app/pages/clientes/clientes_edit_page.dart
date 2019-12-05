@@ -92,7 +92,9 @@ class _ClientesEditPageState extends State<ClientesEditPage> {
 
                       return snapshotTiposServicos.hasData
                           ? DropdownButton<String>(
-                              value: _tiposServicosId,
+                              value: _tiposServicosId == null || _tiposServicosId == ""?
+                                     snapshotTiposServicos.data.first.documentId():
+                                     _tiposServicosId,
                               isExpanded: true,
                               items: snapshotTiposServicos.data
                                   .map<DropdownMenuItem<String>>(
@@ -103,8 +105,10 @@ class _ClientesEditPageState extends State<ClientesEditPage> {
                                 );
                               }).toList(),
                               onChanged: (String tiposServicosId) {
-                                _tiposServicosId = tiposServicosId;
-                                _bloc.setTiposServicosId(tiposServicosId);
+                                setState(() {
+                                  _tiposServicosId = tiposServicosId;
+                                  _bloc.setTiposServicosId(tiposServicosId);
+                                });
                               },
                             )
                           : CircularProgressIndicator();
@@ -174,5 +178,3 @@ class _ClientesEditPageState extends State<ClientesEditPage> {
     }
   }
 }
-
-

@@ -8,12 +8,9 @@ class FuncionariosBloc extends BlocBase {
   var _repository = AppModule.to.getDependency<FuncionariosRepository>();
   get Funcionarios => _repository.funcionarios;
 
-
   // VacinasEdit
   String _documentId;
-  String _nome;
-
-  
+  String _nome;  
 
   FuncionariosBloc() {
     _nomeController.listen((value) => _nome = value);
