@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "483532042827",
+    "firebase_url": "https://estetica-2b657.firebaseio.com",
+    "project_id": "estetica-2b657",
+    "storage_bucket": "estetica-2b657.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483532042827:android:8d1a4544e90187490d53ce",
+        "android_client_info": {
+          "package_name": "biz.df.estetica"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "483532042827-0bcb52qi8g094p67cgfkdpmsan9pumck.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCN3r7enTABbLId9IU7tfJpHtSMi5Vpn3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "483532042827-0bcb52qi8g094p67cgfkdpmsan9pumck.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
